@@ -17,7 +17,7 @@ jobs:
       run: docker login -u tahir1986 -p ${{ secrets.DOCKER_HUB_PASSWORD }}
 
     - name: Build docker image
-      run: docker build . -t tahir1986/dockerrepo:v3
+      run: docker build . -t tahir1986/dockerrepo:latest
     
     - name: Push Docker image
       run: docker push tahir1986/dockerrepo:latest
